@@ -1,0 +1,81 @@
+/* Product CSS Start */
+
+/* Product CSS End */
+
+/* Grid for We Served Section */
+
+.served-section {
+    background-color: #ffffff;
+    padding: 4rem 1.5rem;
+}
+
+/* Title */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1f2937; /* dark gray */
+}
+
+/* Grid layout */
+.served-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+/* Individual box */
+.served-box {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image */
+.served-image {
+    width: 2rem; /* 32px */
+    height: 2rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+/* Label */
+.served-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563; /* gray-700 */
+    text-align: center;
+}
+
+
+.parallelogram-hover {
+    position: relative;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    overflow: visible;
+    transition: color 0.3s ease;
+}
+
+.parallelogram-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #7dd3fc;
+    /* Tailwind sky-400 */
+    transform: skew(-20deg);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.parallelogram-hover:hover::before {
+    opacity: 1;
+}
